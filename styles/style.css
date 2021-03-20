@@ -152,6 +152,17 @@ img {
   color: #fff;
 }
 
+/* inisialisasi menyembunyikan content tab */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
 #tab-1-content .tab-1-content-inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -299,9 +310,14 @@ img {
   text-transform: uppercase;
 }
 
+.btn-icon {
+  margin-left: 1rem;
+}
+
 @media (max-width: 960px) {
   .showcase {
     height: 86vh;
+    max-height: 100%;
   }
 
   .hide-sm {
